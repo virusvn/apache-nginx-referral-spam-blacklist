@@ -400,6 +400,12 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zastroyka\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zazagames\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*zverokruh\-shop\.cz.*$ [NC]
 
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*free\-floating\-buttons\.com.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*success\-seo\.com.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*chinese\-amezon\.com.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*hongfanji\.com.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?.*video\-\-production\.com.*$ [NC]
+
 RewriteRule ^(.*)$ – [F,L]
 
 </IfModule>
@@ -821,7 +827,11 @@ SetEnvIfNoCase Referer youtubedownload.org spambot=yes
 SetEnvIfNoCase Referer zastroyka.org spambot=yes
 SetEnvIfNoCase Referer zazagames.org spambot=yes
 SetEnvIfNoCase Referer zverokruh-shop.cz spambot=yes
-
+SetEnvIfNoCase Referer free-floating-buttons.com spambot=yes
+SetEnvIfNoCase Referer success-seo.com spambot=yes
+SetEnvIfNoCase Referer chinese-amezon.com spambot=yes
+SetEnvIfNoCase Referer hongfanji.com spambot=yes
+SetEnvIfNoCase Referer video--production.com spambot=yes
 </IfModule>
 
 # Apache 2.2
